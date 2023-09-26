@@ -1,18 +1,24 @@
-import vuetify from 'vite-plugin-vuetify'
+import vuetify from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  css: ['vuetify/styles'],
+  ssr: false,
+  css: ["vuetify/lib/styles/main.sass", "~/assets/global.scss"],
+  build: {
+    transpile: ["vuetify"],
+  },
   vite: {
     ssr: {
-        noExternal: ['vuetify'], 
+      noExternal: ["vuetify"],
     },
-},
-modules: [
-  async (options, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', config => config.plugins.push(
-          vuetify()
-      ))
-  }
-]
-})
+  },
+  hooks: {
+    "vite:extendConfig": (config) => {
+      config.plugins?.push(
+        vuetify({
+          styles: { configFile: "./settings.scss" },
+        })
+      );
+    },
+  },
+});
