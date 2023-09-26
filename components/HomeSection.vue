@@ -1,8 +1,5 @@
 <template>
-  <v-parallax
-    :src="img_home"
-    height="700"
-  >
+  <v-parallax :src="img_home" height="700">
     <div
       class="text-apresentation d-flex flex-column fill-height justify-center text-white"
     >
@@ -30,18 +27,26 @@
             v-for="(feature, i) in features"
             :key="i"
           >
-            <v-card class="card">
-              <v-img
-                :src="feature.img"
-                max-width="100px"
-                class="d-block ml-auto mr-auto"
-                style="color: red"
-              ></v-img>
-              <h1 class="font-weight-regular">{{ feature.title }}</h1>
-              <h4 class="font-weight-regular subtitle-1">
-                {{ feature.text }}
-              </h4>
-            </v-card>
+            <v-hover v-slot="{ isHovering, props }" close-delay="200">
+              <v-card
+                class="card"
+                shaped
+                :elevation="isHovering ? 16 : 2"
+                :class="{ 'up': isHovering }"
+                v-bind="props"
+              >
+                <v-img
+                  :src="feature.img"
+                  max-width="100px"
+                  class="d-block ml-auto mr-auto"
+                  style="color: red"
+                ></v-img>
+                <h1 class="font-weight-regular">{{ feature.title }}</h1>
+                <h4 class="font-weight-regular subtitle-1">
+                  {{ feature.text }}
+                </h4>
+              </v-card>
+            </v-hover>
           </v-col>
         </v-row>
       </v-col>
@@ -81,7 +86,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .text-apresentation {
   margin-left: 5em;
   max-width: 20em;
@@ -97,5 +102,10 @@ export default {
 
 .card h1 {
   margin-bottom: 10px;
+}
+
+.up {
+  transform: translateY(-10px);
+  transition: 0.5s ease-out;
 }
 </style>
