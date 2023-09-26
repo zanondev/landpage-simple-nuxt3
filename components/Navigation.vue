@@ -27,7 +27,7 @@
           <span class="mr-2">Preços</span>
         </v-btn>
         <v-btn class="btn" rounded outlined text @click="$vuetify.goTo('#contact')">
-          <span class="mr-2">Contate-nos</span>
+          <span class="mr-2">Contato</span>
         </v-btn>
       </div>
     </v-app-bar>

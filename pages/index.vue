@@ -15,9 +15,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
- ::v-deep .v-application--wrap {
- min-height: fit-content!important;
-  }
-</style>

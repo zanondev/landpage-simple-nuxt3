@@ -1,6 +1,6 @@
 <template>
   <v-parallax
-    src="https://slidescorner.com/wp-content/uploads/2023/02/01-Abstract-Blue-3D-Cubes-Background-for-Tech-FREE-for-PPT-by-SlidesCorner.com_.jpg"
+    :src="img_home"
     height="700"
   >
     <div
@@ -30,11 +30,12 @@
             v-for="(feature, i) in features"
             :key="i"
           >
-            <v-card class="card" shaped>
+            <v-card class="card">
               <v-img
                 :src="feature.img"
                 max-width="100px"
                 class="d-block ml-auto mr-auto"
+                style="color: red"
               ></v-img>
               <h1 class="font-weight-regular">{{ feature.title }}</h1>
               <h4 class="font-weight-regular subtitle-1">
@@ -49,24 +50,28 @@
 </template>
 
 <script>
+import code_svg from "~~/assets/img/code.svg";
+import monitor_svg from "~~/assets/img/monitor.svg";
+import security_svg from "~~/assets/img/security.svg";
+import home_jpg from "~~/assets/img/home.jpg";
+
 export default {
   data() {
     return {
-      dialog: false,
-      videoId: "i8IvvHJssWE",
+      img_home: home_jpg,
       features: [
         {
-          img: "@/assets/img/logo.png",
+          img: monitor_svg,
           title: "Design Limpo",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "@/assets/img/logo.png",
+          img: security_svg,
           title: "Dados Seguros",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
         {
-          img: "@/assets/img/logo.png",
+          img: code_svg,
           title: "Código Aberto",
           text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         },
@@ -87,7 +92,7 @@ export default {
   min-height: 300px;
   padding: 10px;
   transition: 0.5s ease-out;
-   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card h1 {
