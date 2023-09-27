@@ -22,7 +22,7 @@
               </h2>
               <v-btn
                 rounded
-                href="https://https://github.com/zanondev/landpage-simple-nuxt3"
+                href="https://github.com/zanondev/landpage-simple-nuxt3"
                 class="mt-4 download-btn"
               >
                 GIT HUB
