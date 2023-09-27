@@ -3,6 +3,7 @@
   <div class="pt-0 index-main-container">
     <home />
     <about />
+    <download />
   </div>
 </template>
 
@@ -19,6 +20,7 @@
 import navigation from "~~/components/Navigation.vue";
 import home from "~~/components/HomeSection.vue";
 import about from "~~/components/AboutSection.vue";
+import download from "~~/components/DownloadSection.vue";
 
 export default {
   name: "index",
@@ -26,6 +28,7 @@ export default {
     navigation,
     home,
     about,
+    download
   },
 };
 </script>
