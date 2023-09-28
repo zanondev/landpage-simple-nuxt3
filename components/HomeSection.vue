@@ -10,7 +10,7 @@
       </h4>
     </div>
   </v-parallax>
-  <v-container fluid ref="aboutSection" class="mt-2">
+  <v-container fluid id="about-section" class="mt-2">
     <v-row align="center" justify="center">
       <v-col cols="10">
         <v-row align="center" justify="space-around">
