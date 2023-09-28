@@ -1,9 +1,9 @@
 <template>
-  <v-app>
+  <v-app id="home-section">
     <v-app-bar
-      :color="isScrolled ? '#000721' : 'transparent'" 
-      :elevate-on-scroll="true" 
-      :flat="!isScrolled" 
+      :color="isScrolled ? '#000721' : 'transparent'"
+      :elevate-on-scroll="true"
+      :flat="!isScrolled"
       dark
       class="px-15"
     >
@@ -17,16 +17,19 @@
         v-if="isXs"
       />
       <div v-else>
-        <v-btn class="btn" text @click="$vuetify.goTo('#hero')">
+        <v-btn class="btn" text @click="scrollToHome">
           <span class="mr-2">Home</span>
         </v-btn>
-        <v-btn class="btn" text @click="$vuetify.goTo('#features')">
+        <v-btn class="btn" text @click="scrollToAbout">
           <span class="mr-2">Sobre</span>
         </v-btn>
-        <v-btn class="btn" text @click="$vuetify.goTo('#pricing')">
+        <v-btn class="btn" text @click="scrollToDownload">
+          <span class="mr-2">Código</span>
+        </v-btn>
+        <v-btn class="btn" text>
           <span class="mr-2">Preços</span>
         </v-btn>
-        <v-btn class="btn" rounded outlined text @click="$vuetify.goTo('#contact')">
+        <v-btn class="btn" rounded outlined text>
           <span class="mr-2">Contato</span>
         </v-btn>
       </div>
@@ -42,12 +45,42 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
   beforeDestroy() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
+    scrollToAbout() {
+      const section = document.querySelector("#about-section");
+
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollToDownload() {
+      const section = document.querySelector("#download-section");
+
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollToHome() {
+      const section = document.querySelector("#home-section");
+
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
     handleScroll() {
       this.isScrolled = window.scrollY > 0;
     },
@@ -65,8 +98,8 @@ export default {
   background-color: #122546;
 }
 
-.btn{
-  color: white!important;
+.btn {
+  color: white !important;
 }
 
 .v-layout {

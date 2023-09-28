@@ -15,7 +15,7 @@
               <h1 class="font-weight-light display-2 mb-2">
                 Baixar Demonstração
               </h1>
-              <h2 class="font-weight-light">
+              <h2 class="font-weight-light" > 
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ex
                 animi quod laboriosam vel blanditiis labore alias, aliquid,
                 tempora repellendus non.
@@ -24,6 +24,7 @@
                 rounded
                 href="https://github.com/zanondev/landpage-simple-nuxt3"
                 class="mt-4 download-btn"
+                id="download-section"
               >
                 GIT HUB
               </v-btn>
