@@ -26,7 +26,7 @@
         <v-btn class="btn" text @click="scrollToDownload">
           <span class="mr-2">Código</span>
         </v-btn>
-        <v-btn class="btn" text>
+        <v-btn class="btn" text @click="scrollToPricing">
           <span class="mr-2">Preços</span>
         </v-btn>
         <v-btn class="btn" rounded outlined text>
@@ -73,6 +73,16 @@ export default {
     },
     scrollToHome() {
       const section = document.querySelector("#home-section");
+
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollToPricing() {
+      const section = document.querySelector("#pricing-section");
 
       if (section) {
         window.scrollTo({

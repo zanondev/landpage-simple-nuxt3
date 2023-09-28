@@ -1,5 +1,5 @@
 <template>
-  <section id="download">
+  <section id="download-section">
     <v-container fluid>
       <v-row align="center" justify="center">
         <v-col cols="10">
@@ -24,7 +24,6 @@
                 rounded
                 href="https://github.com/zanondev/landpage-simple-nuxt3"
                 class="mt-4 download-btn"
-                id="download-section"
               >
                 GIT HUB
               </v-btn>
@@ -37,7 +36,7 @@
 </template>
 
 <style scoped>
-#download {
+#download-section {
   background-image: url("~~/assets/img/commerce.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -58,8 +57,8 @@ h1 {
   box-shadow: none !important;
 }
 
-#download .container,
-#download .row {
+#download-section .container,
+#download-section .row {
   height: 100%;
 }
 

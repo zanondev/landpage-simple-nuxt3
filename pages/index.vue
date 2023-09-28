@@ -4,6 +4,7 @@
     <home />
     <about />
     <download />
+    <pricing />
   </div>
 </template>
 
@@ -21,6 +22,7 @@ import navigation from "~~/components/Navigation.vue";
 import home from "~~/components/HomeSection.vue";
 import about from "~~/components/AboutSection.vue";
 import download from "~~/components/DownloadSection.vue";
+import pricing from "~~/components/PricingSection.vue";
 
 export default {
   name: "index",
@@ -28,7 +30,8 @@ export default {
     navigation,
     home,
     about,
-    download
+    download,
+    pricing
   },
 };
 </script>
