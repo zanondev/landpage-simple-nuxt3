@@ -11,12 +11,12 @@
         <img src="~~/assets/img/logo.png" class="logo" />
       </v-toolbar-title>
       <v-spacer />
-      <v-app-bar-nav-icon
+      <!-- <v-app-bar-nav-icon
         @click.stop="drawer = !drawer"
         class="mr-4"
         v-if="isXs"
-      />
-      <div v-else>
+      /> -->
+      <div>
         <v-btn class="btn" text @click="scrollToHome">
           <span class="mr-2">Home</span>
         </v-btn>

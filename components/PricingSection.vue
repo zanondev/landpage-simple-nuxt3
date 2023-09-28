@@ -41,7 +41,6 @@
                       R$ 100,00
                     </div>
                     <v-btn
-                      v-bind="size"
                       rounded
                       outlined
                       class="mt-6 pricing__btn"
@@ -82,7 +81,7 @@
                     <div class="text-uppercase text-h4 mt-6 blue--text">
                       R$ 100,00
                     </div>
-                    <v-btn v-bind="size" rounded class="mt-6 pricing__btn">
+                    <v-btn rounded class="mt-6 pricing__btn">
                       COMEÇE AGORA!
                     </v-btn>
                   </v-card-text>
@@ -119,7 +118,7 @@
                     <div class="text-uppercase text-h4 mt-6 blue--text">
                       R$ 500,00
                     </div>
-                    <v-btn v-bind="size" rounded class="mt-6 pricing__btn">
+                    <v-btn rounded class="mt-6 pricing__btn">
                       COMEÇE AGORA!
                     </v-btn>
                   </v-card-text>
