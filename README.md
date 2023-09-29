@@ -4,10 +4,11 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/f91aeb22-92e0-4aa1-b4b7-0242a0ea7514)
 ![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/96b4e685-bd45-4fec-9fd4-2509f5a49e33)
-![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/8794e7e4-1009-49d0-9068-b911d19b0592)
-![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/55ae32fd-9fa8-4709-8d28-e84db3ae57ff)
-![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/d505790f-e8b6-4b2c-a785-c0dd54a5f159)
-![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/177a9416-8b71-4de1-8cdb-c83845aac5c0)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/44335e4f-6c2f-47ef-930f-411ded4d432b)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/bdbed53a-91e4-4177-9df4-d9e4e8d719d7)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/053d5ce1-edc4-4d95-99a7-a3687ac4eee1)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/e8c390a5-0206-4645-93c3-fc3c3887d297)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/3e268cca-d2cb-4420-a57e-6fe9d1343b2e)
 
 
 ## Setup
