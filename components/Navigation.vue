@@ -29,7 +29,7 @@
         <v-btn class="btn" text @click="scrollToPricing">
           <span class="mr-2">Preços</span>
         </v-btn>
-        <v-btn class="btn" rounded outlined text>
+        <v-btn class="btn" rounded outlined text @click="scrollToContact">
           <span class="mr-2">Contato</span>
         </v-btn>
       </div>
@@ -83,6 +83,16 @@ export default {
     },
     scrollToPricing() {
       const section = document.querySelector("#pricing-section");
+
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop,
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollToContact() {
+      const section = document.querySelector("#contact-section");
 
       if (section) {
         window.scrollTo({
