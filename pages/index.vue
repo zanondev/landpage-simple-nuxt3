@@ -7,6 +7,7 @@
     <pricing />
     <products />
     <contact />
+    <footer-sec />
   </div>
 </template>
 
@@ -27,6 +28,7 @@ import download from "~~/components/DownloadSection.vue";
 import pricing from "~~/components/PricingSection.vue";
 import contact from "~~/components/ContactSection.vue";
 import products from "~~/components/ProductsSection.vue";
+import footerSec from "~~/components/Footer.vue";
 
 export default {
   name: "index",
@@ -37,7 +39,8 @@ export default {
     download,
     pricing,
     contact,
-    products
+    products,
+    footerSec,
   },
 };
 </script>
