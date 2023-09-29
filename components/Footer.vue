@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-footer id="footer-section">
-      <container class="footer__container">
+      <div class="footer__container">
         <v-card
           flat
           tile
@@ -31,7 +31,7 @@
             {{ new Date().getFullYear() }} — <strong>Zanon Dev</strong>
           </v-card-text>
         </v-card>
-      </container>
+      </div>
     </v-footer>
   </v-layout>
 </template>

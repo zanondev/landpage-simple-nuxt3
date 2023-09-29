@@ -71,7 +71,7 @@
 <style lang="scss">
 #contact-section {
   background-color: #f4f7f5;
-  margin-bottom: 2em;
+  margin-bottom: 5em;
 }
 h1 {
   font-size: 30px;

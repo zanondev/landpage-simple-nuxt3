@@ -7,8 +7,8 @@
     <pricing />
     <products />
     <contact />
-    <footer-sec />
   </div>
+  <footer-sec />
 </template>
 
 <style scoped>
