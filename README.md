@@ -73,3 +73,9 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/f91aeb22-92e0-4aa1-b4b7-0242a0ea7514)
+![image](https://github.com/zanondev/landpage-simple-nuxt3/assets/109632699/14e0ee74-0236-4cda-9617-0d046200453a)
+
+
+
